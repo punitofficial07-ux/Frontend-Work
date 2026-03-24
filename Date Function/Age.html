@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="date" id="dob">
+<button onclick="calculateAge()">Calculate Age</button>
+
+<p id="result"></p>
+
+<!-- <script>
+function calculateAge() {
+    let dob = new Date(document.getElementById("dob").value);
+    let today = new Date();
+
+    let age = today.getFullYear() - dob.getFullYear();
+
+    document.getElementById("result").innerHTML =
+        "Your Age is: " + age;
+}
+</script> -->
+<script>
+function calculateAge() {
+    let dob = new Date(document.getElementById("dob").value);
+    let today = new Date();
+
+    let years = today.getFullYear() - dob.getFullYear();
+    let months = today.getMonth() - dob.getMonth();
+    let days = today.getDate() - dob.getDate();
+
+    document.getElementById("result").innerHTML =
+        `Age: ${years} Years ${months} Months ${days} Days`;
+}
+</script>
+</body>
+</html>
+

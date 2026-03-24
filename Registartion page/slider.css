@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    width: 500vw;
+    height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    background-image: url(./mountain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* animation: backgroundImage 10s linear infinite; */
+    animation: Translate 50s linear infinite;
+}
+
+.body-content {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div1{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #00bcd4;
+}
+form {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 15px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    padding: 4px;
+    --angle: 0deg;
+    /* background-image: conic-gradient(from var(--angle), red, white, white, green, white, white, yellow); */
+    animation: 5s spin linear infinite;
+    border-radius: 15px;
+}
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+    }
+
+    100% {
+        --angle: 360deg;
+        filter: hue-rotate(360deg);
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.reg {
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+}
+
+.user {
+    display: flex;
+    width: 550px;
+    height: 400px;
+    justify-content: space-around;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    gap: 50px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    background: #fff4e6;
+    border: 2px solid #444;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+input:focus {
+    background: #ffffff;
+    border: 2px solid #00bcd4;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: #6decf2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fa-eye {
+    position: relative;
+    right: 40px;
+}
+
+@keyframes backgroundImage {
+    /* 25% {
+        background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-wooden-surface-free-image.jpeg?w=2210&quality=70");
+    }
+
+    50% {
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg");
+    }
+
+    75% {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg");
+    }
+
+    100% {
+        background-image: url("https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg");
+    } */
+}
+
+@keyframes Translate {
+    25% {
+        transform: translateX(-100vw);
+        /* background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-wooden-surface-free-image.jpeg?w=2210&quality=70"); */
+
+    }
+
+    50% {
+        transform: translateX(-200vw);
+         /* background-image: url("https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg"); */
+    }
+
+    75% {
+        transform: translateX(-300vw);
+         /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg"); */
+    }
+
+    100% {
+        transform: translateX(-400vw);
+         /* background-image: url("https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg"); */
+    }
+}

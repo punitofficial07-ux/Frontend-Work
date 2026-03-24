@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2 id="punit">Punit</h2>
+    <button onclick="length()">Length</button>
+    <button onclick="uc()">toUpperCase</button>
+    <button onclick="lc()">tolowercase</button>
+    <button onclick="slice()">Slice</button>
+    <script>
+
+       function length(){
+        let text = document.getElementById("punit").innerText;
+        document.write(text.length);
+       }
+
+       function uc(){
+        let text = document.getElementById("punit").innerText;
+        document.write(text.toUpperCase());
+       }
+
+        function lc(){
+        let text = document.getElementById("punit").innerText;
+        document.write(text.toLowerCase());
+       }
+
+       function slice(){
+        let text = document.getElementById("punit").innerText;
+        document.write(text.slice());
+       }
+
+    </script>
+</body>
+</html>

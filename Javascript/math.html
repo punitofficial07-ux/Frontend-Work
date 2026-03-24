@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Function</title>
+</head>
+
+<body>
+    Number 1
+    <input type="number" id="num1"><br><br>
+
+    Number 2
+    <input type="number" id="num2"><br><br>
+
+    <button onclick="min()">Minimum value</button>
+    <button onclick="max()">Maximum value</button>
+    <button onclick="sqrt()">Square root</button>
+    <button onclick="abs()">abs of value</button>
+    <button onclick="pow()">Power</button>
+    <button onclick="round()">Round Value</button>
+    <button onclick="ceil()">Ceil Value</button>
+    <button onclick="floor()">Floor Value</button>
+    <script>
+        let a;
+        let b;
+        function min() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("Minimum Value is :" + Math.min(a, b));
+        }
+        function max() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("Maximum value is :" + Math.max(a, b));
+        }
+
+        function sqrt() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("Square root Number 1 value is :" + Math.sqrt(a));
+            document.write("<br><br>Square root Number 2 value is :" + Math.sqrt(b));
+        }
+
+        function abs() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("Positive value of Number 1 value is :" + Math.abs(a));
+            document.write("<br><br>Positive value of Number 2 value is :" + Math.abs(b));
+        }
+
+        function pow() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write(a + "\t\tpower\t\t" + b + "\t\t:", Math.pow(a, b));
+        }
+
+        function round() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("The Number 1 round value is :", Math.round(a));
+            document.write("<br><br>The Number 2 round value is :", Math.round(b));
+        }
+
+        function ceil() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("The number 1 Ceil value is :", Math.ceil(a));
+            document.write("<br><br>The number 2 Ceil value is :", Math.ceil(b));
+        }
+
+        function floor() {
+            parseInt(num1)
+            parseInt(num2)
+
+            a = document.getElementById("num1").value;
+            b = document.getElementById("num2").value;
+
+            document.write("The number 1 Ceil value is :", Math.floor(a));
+            document.write("<br><br>The number 2 Ceil value is :", Math.floor(b));
+        }
+
+
+    </script>
+</body>
+
+</html>
