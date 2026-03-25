@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./checkbox.js">
+        
+    </script>
 </head>
 
 <body>
@@ -26,16 +29,18 @@
             <div class="location">
                 <div class="menu-bar">
                     <input type="checkbox" name="clicks" id="checkbox">
-                    <label for="clicks" class="menu">
+                    <label for="clicks" class="menu" id="click-menu" onclick="press()">
                         <i class="fa-solid fa-bars" id="click"></i>
                     </label>
                 </div>
                 <ul>
-                    <div class="second-nav">
+                    <div id="second-nav">
                         <div class="nav-2">
                             <div class="deliver">
+                                <div>
                                 <b>Deliver to:</b>
                                 <i class="fa-solid fa-location-dot"></i>
+                                </div>
                                 <p> Current Location</p>
                             </div>
                             <div>
@@ -58,7 +63,7 @@
             <div class="section-1">
                 <div class="section">
                     <div class="hero-text">
-                        <b>Are you starving?</b>
+                        <h1>Are you starving?</h1>
                     </div>
                     <div class="hero-text2">
                         <p>Within a few clicks, find meals that are accessible near you</p>

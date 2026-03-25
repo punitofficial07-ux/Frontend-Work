@@ -55,7 +55,7 @@ nav {
     color: orange;
 }
 
-.second-nav {
+#second-nav {
     display: flex;
     width: 830px;
     justify-content: space-around;
@@ -191,7 +191,7 @@ nav {
     background-color: rgb(245, 234, 220);
     width: 148px;
     height: 38px;
-    justify-content: center;
+    justify-content: start;
     border-radius: 8px;
 }
 
@@ -373,7 +373,7 @@ nav {
 .offer {
     position: relative;
     top: 150px;
-    background-color: #f38211;
+    background-color: #ffb30e;
     color: white;
     width: 100px;
     height: 51px;
@@ -1186,20 +1186,39 @@ label:active {}
     }
 
     .hero-text3 {
-        width: 100%;
-        height: auto;
+        width: 288px;
+        height: 220px;
     }
-
+    .section-icons{
+        flex-direction: column;
+        align-items: baseline;
+        gap: 1rem;
+    }
     .address-section,
     .section-images {
         flex-wrap: wrap;
         padding: 4px;
     }
-
+    .hero-text4{
+        height: 40px;
+    }
+    .food,
+    .wagon{
+        font-size: 15px;
+    }
+    .food-location{
+        font-size: 25px;
+    }
     .menu-bar {
         display: block;
     }
-
+    .button-find{
+        width: 120px;
+        height: 30px;
+    }
+    .hr{
+        display: none;
+    }
     #checkbox {
         display: none;
     }
@@ -1212,10 +1231,48 @@ label:active {}
         gap: 20px;
     }
 
-    .second-nav {
-        display: none;
+    .location {
+        width: 109px;
+        display: flex;
+        justify-content: center;
+        padding-left: 25px;
     }
 
+    #second-nav {
+        display: none;
+        position: fixed;
+        top: 5rem;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        gap:30px;
+    }
+    .deliver{
+        flex-direction: column;
+    }
+    .nav-2{
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    ul {
+        width: 100%;
+
+    }
+    h1{
+        font-size: 25px;
+    }
+    .hero-text{
+        width: 100% ;
+    }
+    .hero-text2{
+        font-size: 14px;
+    }
+    #second-nav::before{
+        display: none;
+        position: fixed;
+        left:-100%;
+    } 
     .third-section {
         width: 100%;
         height: auto;
@@ -1302,15 +1359,42 @@ label:active {}
     }
 
     .section2 {
-        display: none;
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .nav-1 {
+        width: 235px;
+        justify-content: flex-start;
+        padding-left: 25px;
+    }
+
+    .img-circle {
+        top: 40px;
+        left: 20px;
+        width: 277px;
+        height: 297px;
+    }
+
+    .section2-img {
+        width: 423px;
+        height: 302px;
+        left: -110px;
+        top: -45px;
     }
 
     .section {
-        width: 320px;
+        width: 100%;
+        text-align: center;
+        gap: 40px;
+        margin-top: 2rem;
     }
 
     .crispy-texts-btn {
         padding: 1rem;
+        width: 100%;
     }
 
     .text-2 {
@@ -1345,6 +1429,7 @@ label:active {}
         justify-content: center;
         align-items: center;
         height: 600px;
+        flex-direction: column-reverse;
     }
 
     .chicken-img {
@@ -1378,7 +1463,7 @@ label:active {}
         width: 210px;
     }
 
-    .second-nav {
+    #second-nav {
         display: none;
     }
 
