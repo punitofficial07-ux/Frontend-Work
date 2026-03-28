@@ -125,7 +125,7 @@ nav {
 
 .hero-text {
     color: aliceblue;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .section-1 {
@@ -1178,7 +1178,7 @@ footer {
 
 label:active {}
 
-@media (min-width:319px) and (max-width:767px) {
+@media (max-width:350px) {
     .hero-section {
         width: 100%;
         height: auto;
@@ -1425,10 +1425,9 @@ label:active {}
 
     .fried-chicken {
         width: 100%;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        height: 600px;
+        height: auto;
         flex-direction: column-reverse;
     }
 
@@ -1436,6 +1435,7 @@ label:active {}
         width: 230px;
         height: 200px;
         border-radius: 10px;
+        margin-bottom: 1rem;
     }
 
     .eight-section-text1 {
@@ -1457,8 +1457,31 @@ label:active {}
         justify-content: flex-start;
     }
 }
+@media (max-width:400px){
+    .location{
+        padding-left: 60px;
+    }
+    .hero-text3{
+        width: 344px;
+        gap: 10px;
+        height: auto;
+    }
+    .delivery-icon{
+        width: 120px;
+        height: 43px;
+    }
+    .hero-text4{
+        width: 270px;
+    }
+    .button-find{
+        height: 45px;
+    }
+    .img-circle{
+        left: 45px;
+    }
+}
 
-@media (min-width:767px) and (max-width:820px) {
+@media (max-width:770px){
     .nav-1 {
         width: 210px;
     }
@@ -1480,8 +1503,7 @@ label:active {}
     .hero-section {
         width: 100%;
         display: flex;
-        flex-direction: column;
-        height: 900px;
+        height: auto;
     }
 
     .section {
@@ -1494,7 +1516,9 @@ label:active {}
         width: 600px;
         height: 280px;
     }
-
+    .img-circle{
+        left: 15rem;
+    }
     .section-1 {
         justify-content: start;
         gap: 60px;
@@ -1519,12 +1543,6 @@ label:active {}
 
     .hero-text4 {
         align-self: flex-start;
-    }
-
-    .section2 {
-        position: absolute;
-        bottom: 91.06%;
-        left: 240px;
     }
 
     .section-images {
@@ -1554,14 +1572,11 @@ label:active {}
     }
 
     .populer-items-left {
-        text-align: center;
-        width: 100%;
-        gap: 1.5rem;
+        display: none;
     }
 
     .populer-images-logo {
-        flex-direction: column;
-        height: 610px;
+        height: auto;
         gap: 1rem;
     }
 
@@ -1570,6 +1585,7 @@ label:active {}
     }
 
     .fourth-section {
+        height: auto;
         gap: 1rem;
     }
 
@@ -1579,7 +1595,7 @@ label:active {}
     }
 
     .fifth-section {
-        margin-top: 8rem;
+        margin-top: 3rem;
     }
 
     .hr {
