@@ -176,6 +176,7 @@ li{
     font-size: 54px;
     color: #603809;
     text-align: center;
+    font-weight: 700;
 }
 .allflavour{
     font-size: 20px;
@@ -302,8 +303,9 @@ li{
     background-image: url(./Images/black.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #603809;
-    background-blend-mode: screen;
+    background-color: #8e4e05;
+    background-blend-mode: multiply;
+    opacity: 80%;
 }
 .fourth-text{
     display: flex;
@@ -332,7 +334,8 @@ li{
     width: 134px;
     height: 48px;
     border-radius: 25px;
-    color: black;
+    color: #1E1E1E;
+    font-weight: 700;
 }
 .coffe-img1{
     position: relative;
@@ -342,6 +345,312 @@ li{
     height: 467px;
 }
 .coffe-div{
+    width: 0;
+    height: 0;
+}
+.fifth-section{
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    font-family: var(--player);
+}
+.feedback{
+    font-size: 54px;
+    color: #603809;
+}
+.feedback-customer{
+    color: #707070;
+    font-size: 20px;
+}
+.fifth-text{
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.fifth-box{
+    width: 980px;
+    height: 575px;
+    background-color: #f6d5a3fa;
+    margin-left: 16rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-direction: column;
+}
+.lorem{
+    width: 780px;
+    height: 185px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #707070;
+}
+.punit{
+    color: #603809;
+    font-size: 32px;
+}
+.project{
+    font-size: 20px;
+    color: #707070;
+}
+.font{
+    width: 890px;
+    height: 135px;
+    color: #603809;
+    font-size: 220px;
+}
+.name{
+    text-align: center;
+}
+.left{
+    background-color: #F9C06A;
+    width: 82px;
+    height: 82px;
+    border-radius: 16px;
+    position: relative;
+    right: 2.5rem;
+}
+.right{
+    position: relative;
+    left: 2.5rem;
+    background-color: #F9C06A;
+    width: 82px;
+    height: 82px;
+    border-radius: 16px;
+}
+.icons{
+    position: relative;
+    bottom: 19rem;
+    display: flex;
+    gap: 51rem;
+    width: 980px;
+    margin-left: 16rem;
+}
+#left{
+    width: 16px;
+    height: 16px;
+    color: #603809;
+}
+#right{
+    width: 16px;
+    height: 16px;
+}
+.left-choco{
+    background-image: url(./Images/choclate.png);
+    width: 414px;
+    height: 226px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 15rem;
+}
+.img-set{
+    width: 0;
+    height: 0;
+}
+.right-choco{
+    background-image: url(./Images/choclate.png);
+    width: 498px;
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 4rem;
+    left: 63.93rem;
+    transform: rotate(180deg);
+}
+.photo{
+    width: 0;
+    height: 0;
+}
+.punit-photo{
+    position: relative;
+    left: 43rem;
+    bottom: 10rem;
+    width: 112px;
+    height: 112px;
+    background-image: url(./Images/punit.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+.left-side,
+.right-side{
+    position: relative;
+    font-size: 25px;
+    top: 27px;
+    left: 24px;
+}
+.sixth-section{
+    width: 100%;
+    height: 374px;
+    background-image: url(./Images/black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #8e4e05;
+    background-blend-mode: multiply;
+    opacity: 80%;
+    font-family: var(--player);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.subscribe{
+    color: white;
+    font-size: 54px;
+    font-style: bold;
+    font-weight: 700;
+}
+.update{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+.user{
+    width: 642px;
+    height: 66px;
+    background-color: #FFF9F1;
+    display: flex;
+    border-radius: 5px
+}
+.mail{
+    border: none;
+    font-size: 20px;
+    color: #00000057;
+    background-color: #FFF9F1;
+    width: 80%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+input::placeholder{
+    position: relative;
+    left: 2rem;
+}
+.btn-sub{
+    width: 20%;
+    border: none;
+    background-color: #eda943;
+    color: #603809;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 5px;
+}
+footer{
+    background-image: url(./Images/dana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 490px;
+    background-blend-mode: multiply;
+    background-color: #6d3e08;
+}
+.fotter-text{
+    display: flex;
+    justify-content: space-around;
+    height: 490px;
+    align-items: center;
+    padding-top: 10rem;
+}
+.bean{
+    width: 380px;
+    height: 258px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.scene{
+    font-family: var(--script);
+    font-size: 54px;
+    color: #FFFFFF;
+}
+.paragraph{
+    font-family: var(--player);
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.icons-all{
+    margin-top: 1rem;
+    color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    gap: 1rem;
+}
+.about{
+    width: 136px;
+    height: 258px;
+    color: #FFFFFF;
+    font-family: var(--player);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-menu{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.about-text{
+    font-size: 26px;
+    font-weight: 700;
+}
+.contact{
+    width: 332px;
+    height: 258px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #FFFFFF;
+    font-family: var(--player);
+}
+.contact-text{
+    font-size: 26px;
+    font-weight: 700;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 18px;
+}
+.cup-img1{
+    background-image: url(./Images/cup.png);
+    width: 444px;
+    height: 358px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 15rem;
+    right: 9rem;
+}
+.cup1{
+    width: 0;
+    height: 0;
+}
+.cup-img2{
+    background-image: url(./Images/cup.png);
+    width: 350px;
+    height: 358px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative;
+    left: 70rem;
+    bottom: 15rem; */
+    transform: rotateY(180deg);
+}
+.cup2{
+    position: relative;
+    left: 70rem;
+    bottom: 15rem;
     width: 0;
     height: 0;
 }

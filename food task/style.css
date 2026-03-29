@@ -57,7 +57,7 @@ nav {
 
 #second-nav {
     display: flex;
-    width: 830px;
+    width: 1190px;
     justify-content: space-around;
     align-items: center;
 }
@@ -114,6 +114,7 @@ nav {
 }
 
 .hero-section {
+    flex-wrap: wrap;
     width: 100%;
     height: 70vh;
     background-image: url(./images/img-2.jpg);
@@ -132,7 +133,7 @@ nav {
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
     height: 100%;
     flex-direction: column;
     gap: 20px;
@@ -167,7 +168,7 @@ nav {
 
 .hero-text3 {
     background-color: white;
-    height: 200px;
+    height: 220px;
     width: 856px;
     border-radius: 8px;
     padding: 20px;
@@ -253,6 +254,7 @@ nav {
 
 
 .address-section {
+    flex-wrap: wrap;
     display: flex;
     gap: 10px;
 }
@@ -265,7 +267,7 @@ nav {
 }
 
 .button-find {
-    width: 90%;
+    width: 25%;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -320,6 +322,7 @@ nav {
 }
 
 .section-images {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,6 +535,7 @@ nav {
 }
 
 .populer-items {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -557,6 +561,7 @@ nav {
 }
 
 .Featured-images {
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -678,6 +683,7 @@ nav {
 }
 
 .Featured-images2 {
+    flex-wrap: wrap;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -791,6 +797,7 @@ nav {
 }
 
 .sixth-section {
+    flex-wrap: wrap;
     background-color: #feefd0;
     width: 100%;
     height: auto;
@@ -854,6 +861,7 @@ nav {
 }
 
 .crispy-sandwich {
+    flex-wrap: wrap;
     width: 1300px;
     height: 500px;
     margin-top: 5rem;
@@ -916,6 +924,7 @@ nav {
 }
 
 .fried-chicken {
+    flex-wrap: wrap;
     width: 1300px;
     height: 500px;
     margin-top: 5rem;
@@ -949,6 +958,7 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .crispy-pizza-img {
@@ -1037,6 +1047,7 @@ footer {
 }
 
 .footer-support {
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     display: flex;
@@ -1178,7 +1189,7 @@ footer {
 
 label:active {}
 
-@media (max-width:350px) {
+/* @media (min-width:319px) and (max-width:373px){
     .hero-section {
         width: 100%;
         height: auto;
@@ -1457,7 +1468,7 @@ label:active {}
         justify-content: flex-start;
     }
 }
-@media (max-width:400px){
+@media (min-width:374px) and (max-width:769px){
     .location{
         padding-left: 60px;
     }
@@ -1481,7 +1492,7 @@ label:active {}
     }
 }
 
-@media (max-width:770px){
+@media (min-width:770px) and (max-width:800px){
     .nav-1 {
         width: 210px;
     }
@@ -1668,4 +1679,258 @@ label:active {}
     .cities-name {
         justify-content: normal;
     }
+} */
+@media (max-width:1440px) {
+    .section-1{
+        width: 100%;
+    }
+    .hero-section{
+        height: auto;
+    }
+    .img-circle{
+    top: 42px;
+    left: 550px;
+    }
 }
+@media (max-width:1100px) {
+    #second-nav{
+        display: none;
+        position: fixed;
+        top: 5rem;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        gap:30px;
+    }
+    .menu-bar{
+        display: block;
+        padding-left: 38rem;
+    }
+    #checkbox{
+        display: none;
+    }
+    #click{
+        font-size: 42px;
+    }
+    .img-circle{
+        left: 340px;
+    }
+    .third-section{
+        height: 56vh;
+    }
+    .crispy-sandwich,
+    .crispy-pizza{
+        height: 560px;
+        width: 100%;
+        justify-content: center;
+    }
+    .crispy-texts-btn{
+        width: 100%;
+        text-align: center;
+    }
+    .crispy-sandwich-img,
+    .crispy-pizza-img{
+        width: 360px;
+        height: 240px;
+        border-radius: 10px;
+    }
+    .fried-chicken{
+        height: 630px;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+    .chicken-img{
+        width: 360px;
+        height: 240px;
+        border-radius: 10px;
+    }
+    .hero-text{
+        font-size: 35px;
+    }
+}
+@media (max-width:800px) {
+    .menu-bar{
+        padding-left: 24rem;
+    }
+    .section,
+    .hero-text,
+    .hero-text2{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-text3{
+        width: 90%;
+    }
+    .img-circle{
+        left: 200px;
+    }
+    .third-section{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+    .support{
+        width: 100%;
+    }
+    .supports{
+        width: 78%;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    .sixth-section1{
+        width: 33%;
+        height: 645px;
+    }
+    .hr{
+        display: none;
+    }
+}
+@media (max-width:500px) {
+    .menu-bar{
+        padding-left: 4rem;
+    }
+    .hero-text{
+        font-size: 20px;
+    }
+    .hero-text2{
+        font-size: 13px;
+    }
+    .hero-text4{
+        width: 100%;
+    }
+    .button-find{
+        width: 33%;
+        height: 50px;
+    }
+    .img-circle{
+        left: 22px;
+    }
+    .third-section{
+        flex-direction: none;
+    }
+    .supports{
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .third-section{
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .food-search{
+        width: 100%;
+        gap: 10px;
+    }
+    .search-food-text{
+        width: 100%;
+    }
+    .search-food-text-img{
+        height: auto;
+    }
+    .scroll-food{
+        width: 100%;
+    }
+}
+@media (max-width:400px) {
+    .section2{
+        width: 100%;
+    }
+    .img-circle{
+        width: 77%;
+        left: 46px;
+        top: 41px;
+        height: 299px;
+    }
+    .section2-img{
+        width: 370px;
+        height: 300px;
+        top: -42px;
+        left: -78px;
+    }
+    .hero-text{
+        font-size: 17px;
+    }
+    .hero-text2{
+        font-size: 12px;
+    }
+    .search-food-img{
+        gap: 4rem;
+    }
+    .sixth-section1{
+        width: 60%;
+    }
+    .crispy-sandwich-img, .crispy-pizza-img{
+        width: 280px;
+        height: 200px;
+    }
+    .chicken-img{
+        width: 280px;
+        height: 200px;
+    }
+    footer{
+        padding: 25px;
+    }
+    .follow-footer{
+        margin-top: 30px;
+    }
+    .eight-section-text1{
+        font-size: 23px;
+    }
+    .populer-images-logo{
+        flex-direction: column;
+    }
+    .desktop{
+        display: none;
+    }
+    .fourth-section{
+        gap: 2rem;
+    }
+    .populer-items-left{
+        width: 100%;
+        height: 80px;
+        gap: 1rem;
+    }
+    .mobile{
+        display: block;
+    }
+}
+@media (max-width:350px) {
+    .section2-img{
+        width: 300px;
+        height: 245px;
+        left: -68px;
+    }
+    .img-circle{
+        width: 71%;
+        left: 52px;
+        top: 25px;
+        height: 228px;
+    }
+    .hero-text{
+        font-size: 15px;
+    }
+    .hero-text2{
+        font-size: 10px;
+    }
+    .section-icons{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: first baseline;
+    }
+    .hero-text3{
+        height: auto;
+    }
+    .footer-support{
+        gap: 20px;
+    }
+    .support{
+        height: 145px;
+        text-align: center;
+    }
+    .button-find{
+        width: 46%;
+    }
+}
+
