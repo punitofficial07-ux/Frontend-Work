@@ -1855,15 +1855,15 @@ label:active {}
         width: 100%;
     }
     .img-circle{
-        width: 77%;
-        left: 46px;
-        top: 41px;
-        height: 299px;
+             left: 45px;
+        top: 29px;
+        height: 288px;
+        width: 288px;
     }
     .section2-img{
-        width: 370px;
-        height: 300px;
-        top: -42px;
+               width: 370px;
+        height: 298px;
+        top: -40px;
         left: -78px;
     }
     .hero-text{
@@ -1915,15 +1915,15 @@ label:active {}
 }
 @media (max-width:350px) {
     .section2-img{
-        width: 300px;
-        height: 245px;
+                width: 301px;
+        height: 246px;
         left: -68px;
     }
     .img-circle{
-        width: 71%;
-        left: 52px;
-        top: 25px;
-        height: 228px;
+       left: 54px;
+        top: 24px;
+        height: 225px;
+        width: 229px;
     }
     .hero-text{
         font-size: 15px;

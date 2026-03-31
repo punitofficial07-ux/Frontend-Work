@@ -21,10 +21,10 @@
                 <div class="menu">
                     <div class="nav-menu">
                         <ul>
-                            <li>Home</li>
-                            <li>Menu</li>
-                            <li>About Us</li>
-                            <li>Contact Us</li>
+                            <li><a href="#home" class="nav-text1">Home</a></li>
+                            <li><a href="#menu" class="nav-text1">Menu</a></li>
+                            <li><a href="#about-us" class="nav-text1">About Us</a></li>
+                            <li><a href="#contact-us" class="nav-text1">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="nav-sign">
@@ -33,25 +33,26 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-nav">
-                <div class="hero-text">
-                    <div class="morning">
-                        We’ve got your morning covered with
-                    </div>
-                    <div class="coffe">
-                        Coffee
-                    </div>
-                    <div class="par">
-                        It is best to start your day with a cup of coffee. Discover the
-                        best flavours coffee you will ever have. We provide the best
-                        for our customers.
-                    </div>
-                    <button class="order">Order Now</button>
-                </div>
-            </div>
+
         </div>
     </header>
-    <section>
+    <div class="hero-nav" id="home">
+        <div class="hero-text">
+            <div class="morning">
+                We’ve got your morning covered with
+            </div>
+            <div class="coffe">
+                Coffee
+            </div>
+            <div class="par">
+                It is best to start your day with a cup of coffee. Discover the
+                best flavours coffee you will ever have. We provide the best
+                for our customers.
+            </div>
+            <button class="order">Order Now</button>
+        </div>
+    </div>
+    <section id="menu">
         <div class="img-set">
             <div class="choclate"></div>
         </div>
@@ -127,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="third-section">
+        <div class="third-section" id="about-us">
             <div class="enjoy">
                 Why are we different? </div>
             <div class="allflavour">
@@ -189,7 +190,7 @@
         <div class="coffe-div">
             <img src="./Images/Coffe.png" alt="" class="coffe-img1">
         </div>
-        <div class="fifth-section">
+        <div class="fifth-section" id="contact-us">
             <div class="img-set">
                 <div class="right-choco">
                 </div>
@@ -210,18 +211,20 @@
                     <p class="project">Project Manager</p>
                 </div>
             </div>
+            <div class="outer">
+                <div class="inner"></div>
+            </div>
             <div class="icons">
-                <div class="left"><i class="fa-solid fa-angle-left left-side"></i></div>
-                <div class="right"><i class="fa-solid fa-angle-right right-side"></i></div>
+                <div class="left"> <i class="fa-solid left-side fa-arrow-left"></i>
+                </div>
+                <div class="right"><i class="fa-solid fa-arrow-right right-side"></i></div>
             </div>
             <i class="fa-sharp fa-solid fa-left"></i>
             <div class="img-set">
                 <div class="left-choco">
                 </div>
             </div>
-            <div class="photo">
-                <div class="punit-photo"></div>
-            </div>
+
         </div>
         <div class="sixth-section">
             <div class="subscribe">Subscribe to get the Latest News</div>
@@ -231,15 +234,15 @@
                 <button class="btn-sub">Subscribe</button>
             </div>
         </div>
-        <div class="cup2">
-            <div class="overlay">
+        <div class="cup-images">
+            <div class="cup2">
                 <div class="cup-img2"></div>
+            </div>
+            <div class="cup1">
+                <div class="cup-img1"></div>
             </div>
         </div>
     </section>
-    <div class="cup1">
-        <div class="cup-img1"></div>
-    </div>
     <footer>
         <div class="fotter-text">
             <div class="bean">
@@ -305,6 +308,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        const img = document.querySelector(".coffe-img1");
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    img.classList.add("show");
+                }
+                else {
+                    img.classList.remove("show");
+                }
+            });
+        });
+
+        observer.observe(img);
+    </script>
 </body>
 
 </html>
