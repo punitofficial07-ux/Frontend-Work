@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="reg">
+                <h2>Registartion Form</h2>
+            </div>
+            <div class="user">
+                <div class="name">
+                    <label for="">Name :</label>
+                    <label for="">Email id :</label>
+                    <label for="">Password :</label>
+                    <label for="">Re-type Password :</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" id="">
+                    <input type="email" name="" id="">
+                    <input type="password" name="" id="">
+                    <input type="password" name="" id="">
+                </div>
+            </div>
+                <div class="btn">
+                    <button onclick="submit()">Submit</button>
+                </div>
+        </form>
+    </div>
+    <script>
+        function register(e) {
+            e.preventDefault();
+
+            let password = document.getElementById("password").value;
+            let repassword = document.getElementById("repassword").value;
+
+            localStorage.setItem("password", password);
+
+            if (password == "" || repassword == "") {
+                alert("fill the password");
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

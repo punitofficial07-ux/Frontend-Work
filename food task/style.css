@@ -1803,6 +1803,9 @@ label:active {}
     .populer-images-logo{
         flex-direction: column;
     }
+    #search-food{
+        width: 420px;
+    }
 }
 @media (max-width:500px) {
     .menu-bar{
@@ -1827,6 +1830,7 @@ label:active {}
     .third-section{
         flex-direction: none;
     }
+    
     .supports{
         width: 100%;
         margin: 0;
@@ -1848,6 +1852,9 @@ label:active {}
     }
     .scroll-food{
         width: 100%;
+    }
+    #search-food{
+        
     }
 }
 @media (max-width:400px) {
