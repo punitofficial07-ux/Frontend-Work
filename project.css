@@ -4,28 +4,39 @@
     --card: rgba(0, 0, 0, 0.05);
     --hover: #764ba2;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body.dark {
     --bg: #1e1e2f;
     --text: #ffffff;
     --card: rgba(255, 255, 255, 0.1);
     --hover: #ffd369;
 }
+
 body {
     background: var(--bg);
     color: var(--text);
     transition: 0.3s;
 }
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 900px;
+    margin: 50px auto;
 }
+
 h1 {
     grid-column: 1 / -1;
     text-align: center;
 }
+
 a {
     text-decoration: none;
     text-align: center;
@@ -35,10 +46,12 @@ a {
     border-radius: 15px;
     transition: 0.3s;
 }
+
 a:hover {
     background: var(--hover);
     color: white;
 }
+
 .toggle-btn {
     position: absolute;
     top: 20px;
@@ -51,11 +64,26 @@ a:hover {
     color: var(--text);
     font-weight: bold;
 }
+
 @media (max-width: 768px) {
     .container {
         gap: 15px;
+        margin: 50px auto;
+    }
+
+    a {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-content {
+        padding: 0 10px;
     }
 }
+
 @media (max-width: 480px) {
     a {
         font-size: 14px;
@@ -65,4 +93,20 @@ a:hover {
     h1 {
         font-size: 1.5rem;
     }
+
+    .footer-content {
+        padding: 0 10px;
+    }
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+

@@ -29,7 +29,7 @@
                     </div>
                     <div class="nav-sign">
                         <b class="signin">Sign In</b>
-                        <button class="sign-up">Sign Up</button>
+                        <button class="sign-up" onclick="signUp()">Sign Up</button>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
                     popularised in the 1960s with the release of Letraset.....</p>
                 <div class="name">
                     <b class="punit">Punit Vithlani</b>
-                    <p class="project">Project Manager</p>
+                    <p class="project">chomu student</p>
                 </div>
             </div>
             <div class="outer">
@@ -309,6 +309,10 @@
         </div>
     </footer>
     <script>
+        function signUp() {
+            window.location.href = "../Registartion page/registration.html";
+        }
+
         const img = document.querySelector(".coffe-img1");
 
         const observer = new IntersectionObserver((entries) => {

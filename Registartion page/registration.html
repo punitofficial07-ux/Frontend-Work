@@ -9,47 +9,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: poppins;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .names {
+            display: flex;
+            gap: 10px;
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <form action="">
-            <div class="reg">
-                <h2>Registartion Form</h2>
-            </div>
-            <div class="user">
-                <div class="name">
-                    <label for="">Name :</label>
-                    <label for="">Email id :</label>
-                    <label for="">Password :</label>
-                    <label for="">Re-type Password :</label>
-                </div>
-                <div class="input-box">
+        <form action="" onsubmit="submit()">
+            <h2>Registartion Form</h2>
+            <div class="names">
+                <div class="first">
+                    <label for="">First name</label>
                     <input type="text" name="" id="">
-                    <input type="email" name="" id="">
-                    <input type="password" name="" id="">
-                    <input type="password" name="" id="">
+                </div>
+                <div class="middle">
+                    <label for="">Middle name</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="last">
+                    <label for="">Last name</label>
+                    <input type="text" name="" id="">
                 </div>
             </div>
-                <div class="btn">
-                    <button onclick="submit()">Submit</button>
-                </div>
+            <div class="email">
+                <label for="">Email</label>
+                <input type="email" name="" id="">
+            </div>
+            <div class="password">
+                <label for="">Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <div class="confirm-password">
+                <label for="">Confirm Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <button type="submit">Submit</button>
         </form>
     </div>
-    <script>
-        function register(e) {
-            e.preventDefault();
-
-            let password = document.getElementById("password").value;
-            let repassword = document.getElementById("repassword").value;
-
-            localStorage.setItem("password", password);
-
-            if (password == "" || repassword == "") {
-                alert("fill the password");
-                return;
-            }
-        }
-    </script>
 </body>
-
 </html>
